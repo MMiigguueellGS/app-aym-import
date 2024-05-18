@@ -1,5 +1,6 @@
 const app = require('./app');
 const sequelize = require('./utils/connection');
+require('./models')// Para que las relaciones funcionen - con esto importamos el index.js de models
 
 const PORT = process.env.PORT || 8080;
 
